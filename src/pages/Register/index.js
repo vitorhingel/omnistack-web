@@ -24,7 +24,7 @@ const Register = () => {
     try {
       const response = await api.post('ongs', data);
 
-      alert(`Seu ID de acesso: ${response.data.id}`);
+      alert(`Seu ID de acesso: ${response.data}`);
 
       history.push('/');
     } catch (error) {
